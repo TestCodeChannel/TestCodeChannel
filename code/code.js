@@ -1,4 +1,4 @@
-alert("click S to start");
+alert("click on an empty space on the page to start");
 var randomNumber = Math.floor(Math.random()*4);
 var audios = {
     audio1 : new Audio("../sound/ElevenLabs_2024-05-12T01_57_12_Brian_pre_s50_sb75_se0_b_m2.mp3"),
@@ -18,11 +18,9 @@ $('.volumechange').on('change',function(){
     console.log(Volumes);
 });
 };
-$(document).keydown(function(e){
-    if (e.key === "e" || e.key === "E"){
+$(document).click(function(){
         audios.audio2.play();
         AudiosVolume(); 
-    };
 }); 
 $('.search-Bar').mouseover(function(){
     var searchBarLeft = $('.search-Bar').offset().left;
