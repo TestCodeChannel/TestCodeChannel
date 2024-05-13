@@ -19,7 +19,7 @@ $('.volumechange').on('change',function(){
 });
 };
 $(document).keydown(function(e){
-    if (e.key == "e" || e.key == "E"){
+    if (e.key === "e" || e.key === "E"){
         audios.audio2.play();
         AudiosVolume(); 
     };
