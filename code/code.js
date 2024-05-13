@@ -18,10 +18,6 @@ $('.volumechange').on('change',function(){
     console.log(Volumes);
 });
 };
-$(document).click(function(){
-        audios.audio2.play();
-        AudiosVolume(); 
-}); 
 $('.search-Bar').mouseover(function(){
     var searchBarLeft = $('.search-Bar').offset().left;
     var windowSize = $(window).width();
@@ -110,6 +106,9 @@ function undelelteScroll(){
 $(document).keydown(function(e){
     if(e.key === "A"){
         undelelteScroll();
+    }if(e.key === "E"){
+        audios.audio2.play();
+        AudiosVolume();
     }
 });
 $('.music-link').click(function(){
