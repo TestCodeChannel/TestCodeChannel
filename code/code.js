@@ -1,4 +1,4 @@
-$(document).on('ready',function(){
+$(document).on('load',function(){
 var randomNumber = Math.floor(Math.random()*4);
 var audios = {
     audio1 : new Audio("../sound/ElevenLabs_2024-05-12T01_57_12_Brian_pre_s50_sb75_se0_b_m2.mp3"),
