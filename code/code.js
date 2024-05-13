@@ -1,3 +1,4 @@
+$(document).on('ready',function(){
 var randomNumber = Math.floor(Math.random()*4);
 var audios = {
     audio1 : new Audio("../sound/ElevenLabs_2024-05-12T01_57_12_Brian_pre_s50_sb75_se0_b_m2.mp3"),
@@ -6,10 +7,6 @@ var audios = {
     audio4 : new Audio("../sound/Not Google.mp3"),
     audio5 : new Audio("../sound/ElevenLabs_2024-05-12T05_21_07_Brian_pre_s50_sb75_t2.mp3")
 }
-$(document).on('ready',function(){
-   audios.audio2.play();
-   AudiosVolume(); 
-});
 function AudiosVolume(){
 $('.volumechange').on('change',function(){
     var Volumes = $('.volumechange').val();
@@ -21,6 +18,8 @@ $('.volumechange').on('change',function(){
     console.log(Volumes);
 });
 };
+audios.audio2.play();
+AudiosVolume(); 
 $('.search-Bar').mouseover(function(){
     var searchBarLeft = $('.search-Bar').offset().left;
     var windowSize = $(window).width();
@@ -136,3 +135,4 @@ $('.code-conteirner-input').on('submit',function(e){
         $('.answer-incorrect').toggle('hide');
     }
 })
+});
