@@ -6,8 +6,10 @@ var audios = {
     audio4 : new Audio("../sound/Not Google.mp3"),
     audio5 : new Audio("../sound/ElevenLabs_2024-05-12T05_21_07_Brian_pre_s50_sb75_t2.mp3")
 }
-audios.audio2.play();
-AudiosVolume();
+$(document).on('ready',function(){
+   audios.audio2.play();
+   AudiosVolume(); 
+});
 function AudiosVolume(){
 $('.volumechange').on('change',function(){
     var Volumes = $('.volumechange').val();
