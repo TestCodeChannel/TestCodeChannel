@@ -17,8 +17,10 @@ $('.volumechange').on('change',function(){
     console.log(Volumes);
 });
 };
-audios.audio2.play();
-AudiosVolume(); 
+$(document).click(function(){
+   audios.audio2.play();
+   AudiosVolume(); 
+}); 
 $('.search-Bar').mouseover(function(){
     var searchBarLeft = $('.search-Bar').offset().left;
     var windowSize = $(window).width();
