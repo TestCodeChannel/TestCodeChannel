@@ -18,6 +18,7 @@ $('.volumechange').on('change',function(){
     console.log(Volumes);
 });
 };
+$('.screen-alert').addclass("unhideScreen");
 $('.search-Bar').mouseover(function(){
     var searchBarLeft = $('.search-Bar').offset().left;
     var windowSize = $(window).width();
