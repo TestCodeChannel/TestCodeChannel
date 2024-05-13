@@ -18,7 +18,7 @@ $('.volumechange').on('change',function(){
     console.log(Volumes);
 });
 };
-$('.screen-alert').addclass("unhideScreen");
+$('.screen-alert').addClass("unhideScreen");
 $('.search-Bar').mouseover(function(){
     var searchBarLeft = $('.search-Bar').offset().left;
     var windowSize = $(window).width();
@@ -116,9 +116,6 @@ $('.start-link').click(function(){
 $('.music-link').click(function(){
     audios.audio4.play();
     AudiosVolume();
-});
-$('.code-link').click(function(){
-
 });
 function showMusicandCode(){
     $('.code-link').removeClass('hide');
