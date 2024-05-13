@@ -106,7 +106,6 @@ function undelelteScroll(){
 $(document).keydown(function(e){
     if(e.key === "A"){
         undelelteScroll();
-    }else if(e.key === "E"){
         audios.audio2.play();
         AudiosVolume();
     }
