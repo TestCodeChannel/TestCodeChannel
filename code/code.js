@@ -1,7 +1,5 @@
 alert("click start to start");
 $('.start-link').click(function(){
-   audios.audio2.play();
-   AudiosVolume(); 
 var randomNumber = Math.floor(Math.random()*4);
 var audios = {
     audio1 : new Audio("../sound/ElevenLabs_2024-05-12T01_57_12_Brian_pre_s50_sb75_se0_b_m2.mp3"),
@@ -21,6 +19,8 @@ $('.volumechange').on('change',function(){
     console.log(Volumes);
 });
 };
+audios.audio2.play();
+AudiosVolume(); 
 $('.screen-alert').addClass("unhideScreen");
 $('.search-Bar').mouseover(function(){
     var searchBarLeft = $('.search-Bar').offset().left;
