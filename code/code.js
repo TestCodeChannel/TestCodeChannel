@@ -74,7 +74,7 @@ function answeredIncorrect(){
     delayTime();
 }
 function ConteinerUp(){
-    $('.lose-cursor-timer-conteiner').css('top','-35%');
+    $('.lose-cursor-timer-conteiner').css('top','-135%');
 }
 function ConteinerDown(){
     $('.lose-cursor-timer-conteiner').css('top','25%');
