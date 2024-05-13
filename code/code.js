@@ -106,9 +106,11 @@ function undelelteScroll(){
 $(document).keydown(function(e){
     if(e.key === "A"){
         undelelteScroll();
-        audios.audio2.play();
-        AudiosVolume();
     }
+});
+$('.start-link').click(function(){
+   audios.audio2.play();
+    AudiosVolume(); 
 });
 $('.music-link').click(function(){
     audios.audio4.play();
