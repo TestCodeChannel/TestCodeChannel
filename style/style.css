@@ -194,6 +194,16 @@ a:hover{
     justify-content: center;
     text-align: center;
 }
+ .screen-alert{
+        display: none;
+        padding: 10px;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        height: 100vh;
+        font-weight: 900;
+        color: black;
+}
 @media (max-width:982px){
     .footer-conteiner{
         display: flex;
@@ -218,17 +228,6 @@ a:hover{
     }
     .unhideScreen{
         display: flex;
-    }
-    .screen-alert{
-        display: flex;
-        padding: 10px;
-        justify-content: center;
-        align-items: center;
-        width: 100vw;
-        height: 100vh;
-        font-weight: 900;
-        color: black;
-
     }
 }
 .div-key{
