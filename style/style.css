@@ -1,0 +1,328 @@
+*{
+    margin: 0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+body{
+    overflow-x: hidden;
+}
+.main-conteiner{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    min-width: 582.22px;
+    overflow-x: hidden;
+}
+.menu-nav-container{
+    display: flex;
+    flex-direction: row;
+    padding: 12px;
+}
+.box-nav-about-and-store{
+    display: flex;
+    justify-self: start;
+    align-items: center;
+    flex: 1;
+    gap: 10px;
+    font-size: 14px;
+    font-weight: 400;
+}
+.store-link{
+    padding: 5px;
+    margin-right: 70px;
+}
+.about-link{
+    margin-left: 15px;
+    padding: 5px;
+}
+svg{
+    width: 40px;
+}
+nav svg{
+    fill: #5f6368;
+}
+nav a{
+ color: black;
+ text-decoration: none;
+}
+.gb_h{
+    width:22px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+nav i{
+    font-size: 20px;
+}
+.box-nav-gmail-images-and-profile{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: arial;
+    font-size: 14px;
+    font-weight: 100;
+}
+.gmail-link{
+    margin-right: 7px;
+}
+.Images-link{
+    margin-right: 13px;
+}
+.conteiner-logo-search-Bar-and-buttons{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.logo{
+    width: 282px;
+    height: 200px;
+}
+.search-Bar{
+    position: relative;
+    display: flex;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    border: .1px solid rgb(227, 224, 224);
+    border-radius: 50px;
+    padding: 10px;
+    left: 0;
+    min-width: 582.22px;
+    max-width: 582.22px;
+    transition: all 100ms ease-in-out;
+}
+.logo-conteiner{
+    position: relative;
+}
+.logo-not-symbol{
+    position: absolute;
+    top: 29px;
+    background-color: rgb(251, 188, 5);
+    font-weight: 500;
+    padding: 10px;
+    border: none;
+    border-radius: 40px;
+    color:  rgb(255, 255, 255);
+}
+.search-Bar svg{
+    width: 20px;
+}
+.search-bar-user-input{
+    display: flex;
+    border: none;
+    outline: none;
+    flex: 1;
+    background-color: transparent;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 100%;
+    min-width: 10px;
+
+}
+.search-Bar-buttons{
+    margin-top: 30px;
+}
+.search-Bar-buttons button{
+    border: none;
+    padding: 7px 16px;
+    border-radius: 5px;
+    background-color: #f8f9fa;
+    color: #3c4043;
+    margin-left: 7px;
+}
+.container-Ai-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    flex: 1;
+}
+.container-Ai-button button{
+    border: none;
+    height: fit-content;
+    padding: 20px 50px;
+    border-radius: 50px;
+    background-color: #f7f8f9;
+}
+.container-Ai-button button svg{
+    width: 18px;
+    margin-left: 7px;
+}
+.footer-conteiner{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 70px;
+    flex-wrap: wrap;
+    background-color: #f2f2f2;
+}
+.container-Advertising-buttons{
+    display: flex;
+    gap: 30px;
+}
+.container-privacy-buttons{
+    display: flex;
+    gap: 30px;
+}
+.footer-conteiner a{
+    text-decoration: none;
+    color: #202124;
+}
+.goxjub{
+    margin-right: 10px;
+}
+svg{
+    cursor: pointer;
+}
+a:hover{
+    text-decoration: underline;
+}
+.search-icon{
+    fill: #9aa0a6;
+}
+.dancing{
+    position: absolute;
+    top:25%;
+    left: 10%;
+    width: 150px;
+    border-radius: 10px;
+}
+.volume{
+    display: flex;
+    align-content: center;
+    gap: 10px;
+    justify-content: center;
+    text-align: center;
+}
+@media (max-width:982px){
+    .footer-conteiner{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        gap: 10px;
+        flex-wrap: wrap;
+        background-color: #f2f2f2;
+    }
+}
+@media (max-width:682px){
+    .main-conteiner{
+        display: none;
+    }
+    .footer-conteiner{
+        display: none;
+        justify-content: space-around;
+        align-items: center;
+        gap: 10px;
+        flex-wrap: wrap;
+        background-color: #f2f2f2;
+    }
+    .unhideScreen{
+        display: flex;
+    }
+    .screen-alert{
+        display: flex;
+        padding: 10px;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        height: 100vh;
+        font-weight: 900;
+        color: black;
+
+    }
+}
+.div-key{
+    display: flex;
+    border: none;
+    align-items: center;
+    border-radius: 10px;
+    background-color: #212529;
+    padding: 21px 37px 23px;
+    cursor: pointer;
+    font-size: 21px;
+    font-weight: 700;
+    transition: all 300ms ease-in-out;
+}
+.div-key:hover{
+    background-color: #ffffff;
+    color: #ffc107;
+}
+.hide{
+    display: none;
+}
+.hidden-keys p{
+    color: #ffc107;
+    text-align: center;
+    margin: 0;
+}
+.hidden-keys{
+    display: flex;
+    justify-self: center;
+    gap: 10px;
+}
+.lose-cursor-timer-conteiner{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background-color: #ffc107;
+    border-radius: 10px;
+    box-shadow: 0px 0px 9px 5px  #0000002e;
+    padding: 30px;
+    top: -135%;
+    left: 35%;
+    transition: all 300ms ease-in-out;
+}
+.timer-display{
+    font-size: 29px;
+    font-weight: 800;
+    color: #202124;
+}
+.lose-cursor-timer-conteiner hr{
+    margin: 8px;
+    border: none;
+    width: 100%;
+}
+.lose-cursor-timer-conteiner h2{
+    font-weight: 900;
+}
+.conteiner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    background-color: #202827;
+}
+.code-conteirner-input{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    background-color: #202020;
+    color: #ffc107;
+    font-weight: 900;
+    border-radius: 10px;
+    text-align: center;
+}
+.user-code-input{
+    outline: none;
+    border-radius: 10px;
+    border: none;
+    padding: 10px;
+    font-weight: 900;
+    color: #ffc107;
+    text-align: center;
+}
+.answer-correct{
+    color: greenyellow;
+    margin-top: 10px;
+}
+.answer-incorrect{
+    color: rgb(255, 47, 47);
+    margin-top: 10px;
+}
