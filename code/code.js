@@ -38,15 +38,15 @@ $('.search-Bar').mouseover(function(){
                     timing-= 1;
                     $('.timer-display').html(timing);
                 }else{
-                    clearInterval();
                     delayTime();
                     showKey();
-                    DeleteScroll()
-                    showMusicandCode()
-                    audios.audio3.play();
-                    AudiosVolume();
+                    DeleteScroll();
+                    showMusicandCode();
+                    clearInterval(timer);
                 }
         },1000);
+        audios.audio3.play();
+        AudiosVolume();
         buttonClicked(timer);
     };
 }); 
