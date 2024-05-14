@@ -118,6 +118,10 @@ $('.music-link').click(function(){
     audios.audio4.play();
     AudiosVolume();
 });
+$('.music-link').dblclick(function(){
+    audios.audio4.pause();
+    AudiosVolume();
+});
 function showMusicandCode(){
     $('.code-link').removeClass('hide');
     $('.music-link').removeClass('hide');
