@@ -42,11 +42,12 @@ $('.search-Bar').mouseover(function(){
                     showKey();
                     DeleteScroll();
                     showMusicandCode();
+                    audios.audio3.play();
+                    audios.audio1.pause();
+                    AudiosVolume();
                     clearInterval(timer);
                 }
         },1000);
-        audios.audio3.play();
-        AudiosVolume();
         buttonClicked(timer);
     };
 }); 
